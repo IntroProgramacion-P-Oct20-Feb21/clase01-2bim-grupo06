@@ -10,5 +10,17 @@ package ejemplos;
  * @author JEanpa
  */
 public class ejemplos08 {
-    
+    public static void main(String[] args) {
+        casos= int(raw_input())
+
+def contar(x): 
+    may, minu, num = 0,0,0 
+    return(may,minu,num)
+
+ord(may= range(65,90) 
+
+for i in range(casos): 
+    palabra = raw_input() 
+    print(contar(palabra))
+    }
 }

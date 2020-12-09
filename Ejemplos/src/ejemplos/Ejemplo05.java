@@ -10,15 +10,15 @@ package ejemplos;
  * @author Usuario
  */
 public class Ejemplo05 {
-    
-    public static void main(String[] args){
-        for (int i = 97; i <=300 ; i++) {
-                                          //    V     || F    >>> V
-            if ( (i==101) || (i==105) ) { // 101==101 || 101==105 
+    public static void main(String[] args) 
+    {
+        for (int i = 97; i <= 122; i++) {
+             if ((char)i=='a'|| (char)i=='e'|| (char)i=='i' || 
+                     (char)i=='o' || (char)i=='u') {
                 System.out.printf("%s |%d|\n", (char)i, i);
             }
-    }
-        
             
-}
+        }
+    }
+
 }
