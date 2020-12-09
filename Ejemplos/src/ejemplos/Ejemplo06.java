@@ -10,5 +10,7 @@ package ejemplos;
  * @author Usuario
  */
 public class Ejemplo06 {
-    
+    public static void main(String[] args) {
+        
+    }
 }
