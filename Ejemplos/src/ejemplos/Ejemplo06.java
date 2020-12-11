@@ -11,31 +11,28 @@ package ejemplos;
  */
 public class Ejemplo06 {
     public static void main(String[] args) {
-
-        String cadena = "Ecuador sudamerica";
+        String cadena = "Hola Mundo";
+        double sumaM = 0;
+        double sumaMin= 0;
         char valor;
-        int valorNumerico;
-        int minusculas;
-        int mayusculas; 
-        int total; 
-        System.out.println(cadena.length()); // 7
+        String cadenaF ="";
+        String cadenam = "";
+         for (int i = 0; i < cadena.length(); i++) {
+             valor = cadena.charAt(i);
+              if (((char)valor >= 65) && ((char)valor<=90)){
+                  sumaM = sumaM + 1;
+                  cadenam= String.format("%.2f\n",(sumaM));
+                }else{
+                  if (((char)valor >= 97) && ((char)valor<=122)){
+                  sumaMin = sumaMin + 1;
+                  cadenaF = String.format("%.2f\n",(sumaMin));     
+              }
+            }
         
-        
-        for (int i = 0; i < cadena.length(); i++) {
-            valor = cadena.charAt(i); 
-                                       
-            valorNumerico = (int) valor; 
-            if (valorNumerico>=65 && valorNumerico <=90){
-                mayusculas = mayusculas + 1;
-               
-            } 
-            
-            if (valorNumerico>=95 && valorNumerico <=122){
-                minusculas = minusculas + 1;
-            } 
-            
-            System.out.printf("%d\n%d\n",mayusculas,minusculas);
-
+        }
+        System.out.printf("Suma mayúscula:\n%sSuma minúscula:\n%s",cadenam,
+                cadenaF);  
     }
 }
-}
+     
+
