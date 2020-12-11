@@ -16,10 +16,28 @@ public class Ejemplo04 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        char caracter = 'á';
-        int c = caracter;
-        System.out.println((int)caracter);
-        
+        for (int i = 97; i <= 122; i++) {
+          
+              if ((char)i=='a') {
+              System.out.printf("%s |%d|\n", (char)i, i);
+              }else{
+                  if ((char)i=='e') {
+              System.out.printf("%s |%d|\n", (char)i, i);
+                  }else{
+                      if ((char)i=='i') {
+              System.out.printf("%s |%d|\n", (char)i, i);
+                      }else{
+                          if ((char)i=='o') {
+              System.out.printf("%s |%d|\n", (char)i, i);
+                      }else{
+                              if ((char)i=='u') {
+              System.out.printf("%s |%d|\n", (char)i, i);
+                          }
+                          }
+                      }
+                  }
+              }
+        }
     }
     
 }

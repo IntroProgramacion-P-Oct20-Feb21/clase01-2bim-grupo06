@@ -11,28 +11,29 @@ package ejemplos;
  */
 public class Ejemplo05 {
     public static void main(String[] args){
-        for (int i = 97; i <= 122; i++) {
-          
-              if ((char)i=='a') {
-              System.out.printf("%s |%d|\n", (char)i, i);
-              }else{
-                  if ((char)i=='e') {
-              System.out.printf("%s |%d|\n", (char)i, i);
-                  }else{
-                      if ((char)i=='i') {
-              System.out.printf("%s |%d|\n", (char)i, i);
-                      }else{
-                          if ((char)i=='o') {
-              System.out.printf("%s |%d|\n", (char)i, i);
-                      }else{
-                              if ((char)i=='u') {
-              System.out.printf("%s |%d|\n", (char)i, i);
-                              }
-                          }
-                      }
-                  }
+             String cadena = "Hola Mundo";
+        double sumaM = 0;
+        double sumaMin= 0;
+        char valor;
+        String cadenaF ="";
+        String cadenam = "";
+         for (int i = 0; i < cadena.length(); i++) {
+             valor = cadena.charAt(i);
+              if (((char)valor >= 65) && ((char)valor<=90)){
+                  sumaM = sumaM + 1;
+                  cadenam= String.format("%.2f\n",(sumaM));
+                }else{
+                  if (((char)valor >= 97) && ((char)valor<=122)){
+                  sumaMin = sumaMin + 1;
+                  cadenaF = String.format("%.2f\n",(sumaMin));     
               }
+            }
+        
         }
+        System.out.printf("Suma mayúscula:\n%sSuma minúscula:\n%s",cadenam,
+                cadenaF);  
+              
+        
     
     }
 
